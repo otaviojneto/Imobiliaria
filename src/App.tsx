@@ -1,10 +1,11 @@
-import "./styles.css";
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Routes from './routes/index.js';
 
-export default function App() {
-  return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-    </div>
-  );
-}
+const App: React.FC = () => (
+  <Router>
+    <Routes />
+  </Router>
+);
+
+export default App;
