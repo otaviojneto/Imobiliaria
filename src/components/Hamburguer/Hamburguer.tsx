@@ -1,10 +1,18 @@
 import React from 'react';
 import { ColorProps, Menu } from './styles';
 
-const Hamburguer: React.FC<ColorProps> = ({ color }) => {
+export type HamburguerProps = ColorProps & {
+  onClick?: () => void;
+};
+
+const Hamburguer: React.FC<HamburguerProps> = ({
+  color,
+  onClick,
+  isOpen,
+}) => {
   return (
     <>
-      <Menu color={color}>
+      <Menu color={color} onClick={onClick} isOpen={isOpen}>
         <span />
         <span />
       </Menu>

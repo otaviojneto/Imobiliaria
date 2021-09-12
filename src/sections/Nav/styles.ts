@@ -2,6 +2,10 @@ import styled from 'styled-components';
 import { IcBrand, IcBrandLmhWhite } from '../../icons';
 import theme from '../../styles/colors';
 
+export type OpenProps = {
+  isOpen?: boolean;
+};
+
 export const Container = styled.div`
   align-items: center;
   background-color: ${theme.colors.grey1};
@@ -10,11 +14,23 @@ export const Container = styled.div`
   padding: 15px 15%;
 `;
 
-export const Menu = styled.div`
-  display: none;
+export const Menu = styled.div<OpenProps>`
+  background: chocolate;
+  display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
+  height: ${({ isOpen }) => (isOpen ? '92vh' : 0)};
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 70px;
+  width: ${({ isOpen }) => (isOpen ? '100%' : 0)};
 
   @media (min-width: 569px) {
     display: block;
+    height: 0;
+    position: static;
+    width: auto;
+
     ul {
       display: flex;
 

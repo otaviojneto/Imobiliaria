@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export type ColorProps = {
   color?: string;
+  isOpen?: boolean;
 };
 
 export const Menu = styled.button<ColorProps>`
@@ -39,7 +40,7 @@ export const Menu = styled.button<ColorProps>`
     &:hover {
       &::after,
       &::before {
-        width: 100%;
+        width: ${({ isOpen }) => (isOpen ? '100%' : '')};
       }
     }
 
