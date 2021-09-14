@@ -15,6 +15,8 @@ export default {
     grey: '#BDBDBD',
     grey1: '#aba9a9a8',
     grey2: '#999999',
+    grey3: '#c5c3c3',
+    grey5: '#ececec',
     yellow: '#FFD100',
     success: '#008009',
     error: '#E60000',

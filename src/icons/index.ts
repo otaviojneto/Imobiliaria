@@ -1,6 +1,5 @@
 import IcBedroom from './bedroom.svg';
 import IcBrand from './brandLmh.png';
-import IcBrandLmhWhite from './brandLmhWhite.png';
 import IcArrowLeft from './arrowLeft.svg';
 import IcCalendar from './calendar.svg';
 import IcChevronDown from './chevronDown.svg';
@@ -22,7 +21,6 @@ export {
   IcArrowLeft,
   IcBedroom,
   IcBrand,
-  IcBrandLmhWhite,
   IcCalendar,
   IcChevronDown,
   IcCoffe,

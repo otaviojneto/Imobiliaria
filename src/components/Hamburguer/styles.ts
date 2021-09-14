@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export type ColorProps = {
   color?: string;
@@ -16,32 +16,29 @@ export const Menu = styled.button<ColorProps>`
     width: 26px;
 
     &::before {
-      background-color: ${({ color }) => color && color};
-      content: '';
-      height: 4px;
-      right: 0;
-      position: absolute;
       top: 9px;
-      transition: ease-in-out 0.4s;
       width: 17px;
     }
 
+    &::after {
+      top: 18px;
+      width: 10px;
+    }
+
+    &::before,
     &::after {
       background-color: ${({ color }) => color && color};
       content: '';
       height: 4px;
       right: 0;
       position: absolute;
-      top: 18px;
       transition: ease-in-out 0.4s;
-      width: 10px;
-    }
 
-    &:hover {
-      &::after,
-      &::before {
-        width: ${({ isOpen }) => (isOpen ? '100%' : '')};
-      }
+      ${({ isOpen }) =>
+        isOpen &&
+        css`
+          width: 100%;
+        `}
     }
 
     span {

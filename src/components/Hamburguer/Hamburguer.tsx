@@ -14,7 +14,6 @@ const Hamburguer: React.FC<HamburguerProps> = ({
     <>
       <Menu color={color} onClick={onClick} isOpen={isOpen}>
         <span />
-        <span />
       </Menu>
     </>
   );
