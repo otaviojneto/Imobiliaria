@@ -12,29 +12,51 @@ export const Container = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 15px 15%;
+  position: relative;
 `;
 
 export const Menu = styled.div<OpenProps>`
-  background: chocolate;
-  display: ${({ isOpen }) => (isOpen ? 'flex' : 'none')};
+  background: ${theme.colors.grey1};
+  display: ${({ isOpen }) => (isOpen ? 'flex' : '')};
   height: ${({ isOpen }) => (isOpen ? '92vh' : 0)};
   justify-content: center;
   position: absolute;
   right: 0;
   text-align: center;
+  transition: ease-in-out 0.5s;
   top: 70px;
   width: ${({ isOpen }) => (isOpen ? '100%' : 0)};
 
+  ul {
+    transition: ease-in-out 0.4s;
+    width: 100%;
+
+    li {
+      border-top: 1px solid ${theme.colors.grey2};
+      padding: 8px;
+      width: 100%;
+
+      a {
+        color: ${theme.colors.black};
+        font-weight: 600;
+        padding: 9px 140px;
+        width: 100%;
+      }
+    }
+  }
+
   @media (min-width: 569px) {
-    display: block;
-    height: 0;
+    display: flex;
+    height: 40px;
     position: static;
     width: auto;
 
     ul {
       display: flex;
+      width: auto;
 
       li {
+        border-top: 0;
         a {
           border-bottom: 1px solid transparent;
           border-top: 1px solid transparent;
@@ -46,8 +68,8 @@ export const Menu = styled.div<OpenProps>`
 
           &:hover {
             border-bottom: 1px solid;
-            border-top: 1px solid;
             border-radius: 8px;
+            border-top: 1px solid;
             color: ${theme.colors.white};
             padding: 5px;
           }
