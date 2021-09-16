@@ -1,13 +1,14 @@
 import React from 'react';
-import Nav from '../../sections/Nav/Nav';
-
-// import { Container } from './styles';
+import { Hero, Nav } from '../../sections';
+import { Container } from './styles';
 
 const Home: React.FC = () => {
   return (
-    <>
+    <Container>
       <Nav />
-    </>
+      <Hero />
+      <h1>fdd</h1>
+    </Container>
   );
 };
 

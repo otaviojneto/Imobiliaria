@@ -40,9 +40,14 @@ export const Menu = styled.div<OpenProps>`
 
       a {
         color: ${theme.colors.secondary};
-        font-weight: 600;
+        font-weight: 700;
         padding: 9px 140px;
         width: 100%;
+
+        &:hover {
+          color: ${theme.colors.black};
+          opacity: 0.8;
+        }
       }
     }
   }
@@ -65,7 +70,7 @@ export const Menu = styled.div<OpenProps>`
         a {
           border-bottom: 1px solid transparent;
           color: ${theme.colors.secondary};
-          font-weight: 500;
+          font-weight: 700;
           padding: 5px;
           transition: ease-in-out 0.4s;
 
