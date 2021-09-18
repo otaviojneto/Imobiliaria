@@ -1,3 +1,4 @@
+import CardInfo from './CardInfo';
 import Hamburguer from './Hamburguer';
 
-export { Hamburguer };
+export { CardInfo, Hamburguer };

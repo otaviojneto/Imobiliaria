@@ -1,3 +1,4 @@
-import background from './homeback.jpg';
+import background from './fun.png';
+import brand from './brand.png';
 
-export { background };
+export { background, brand };
