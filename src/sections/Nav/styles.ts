@@ -28,6 +28,7 @@ export const Menu = styled.div<OpenProps>`
   transition: ease-in-out 0.5s;
   top: 70px;
   width: ${({ isOpen }) => (isOpen ? '100%' : 0)};
+  z-index: 2;
 
   ul {
     transition: ease-in-out 0.4s;
@@ -52,7 +53,7 @@ export const Menu = styled.div<OpenProps>`
     }
   }
 
-  @media (min-width: 569px) {
+  @media (min-width: 768px) {
     background-color: inherit;
     display: flex;
     height: 40px;

@@ -8,7 +8,7 @@ export type ColorProps = {
 export const Menu = styled.button<ColorProps>`
   display: none;
 
-  @media (max-width: 568px) {
+  @media (max-width: 768px) {
     background-color: transparent;
     display: block;
     height: 24px;

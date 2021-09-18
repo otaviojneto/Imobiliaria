@@ -1,5 +1,5 @@
 import React from 'react';
-import { Hero, Nav, Rent } from '../../sections';
+import { Footer, Hero, Nav, Rent } from '../../sections';
 import { Container } from './styles';
 
 const Home: React.FC = () => {
@@ -8,6 +8,7 @@ const Home: React.FC = () => {
       <Nav />
       <Hero />
       <Rent />
+      <Footer />
     </Container>
   );
 };

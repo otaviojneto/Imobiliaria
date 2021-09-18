@@ -2,12 +2,19 @@ import React from 'react';
 import { CardInfo } from '../../components';
 import { background } from '../../assets';
 
-import { Container } from './styles';
+import { Cards, Container } from './styles';
 
 const Rent: React.FC = () => {
   return (
     <Container>
-      <CardInfo Img={background} />
+      <h1>Imóveis adicionados recentemente</h1>
+
+      <Cards>
+        <CardInfo Img={background} />
+        <CardInfo Img={background} />
+        <CardInfo Img={background} />
+        <CardInfo Img={background} />
+      </Cards>
     </Container>
   );
 };
