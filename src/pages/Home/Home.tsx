@@ -1,5 +1,12 @@
 import React from 'react';
-import { Abaut, Footer, Hero, Nav, Rent } from '../../sections';
+import {
+  Abaut,
+  Advertise,
+  Footer,
+  Hero,
+  Nav,
+  Rent,
+} from '../../sections';
 import { Container } from './styles';
 
 const Home: React.FC = () => {
@@ -8,6 +15,7 @@ const Home: React.FC = () => {
       <Nav />
       <Hero />
       <Rent />
+      <Advertise />
       <Abaut />
       <Footer />
     </Container>

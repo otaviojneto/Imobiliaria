@@ -16,6 +16,7 @@ export const Container = styled.div`
     left: 0px;
     top: -32px;
     transform: rotate(2deg);
+    transition: ease-in-out 0.4s;
     position: absolute;
     width: 101%;
   }
@@ -26,5 +27,12 @@ export const Container = styled.div`
 
   p {
     padding: 10px 20px;
+  }
+
+  @media (min-width: 1400px) {
+    &::before {
+      height: 74px;
+      top: -34px;
+    }
   }
 `;
