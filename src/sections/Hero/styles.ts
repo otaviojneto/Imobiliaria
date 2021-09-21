@@ -35,9 +35,10 @@ export const Content = styled.div`
     bottom: -36px;
     content: '';
     height: 70px;
+    left: 3px;
     transform: rotate(-3deg);
     position: absolute;
-    width: 101%;
+    width: 100%;
   }
 
   img {

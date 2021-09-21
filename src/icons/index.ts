@@ -16,6 +16,7 @@ import IcPerson from './person.svg';
 import IcPhone from './phone.svg';
 import IcReceipt from './receipt.svg';
 import IcRuler from './ruler.svg';
+import IcWhatsapp from './whatsapp.svg';
 
 export {
   IcArrowLeft,
@@ -36,4 +37,5 @@ export {
   IcPhone,
   IcReceipt,
   IcRuler,
+  IcWhatsapp,
 };

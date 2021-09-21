@@ -19,7 +19,7 @@ const Link = [
   },
   {
     id: 4,
-    name: 'Sobre',
+    name: 'Serviços',
     link: '/',
     icons: '',
   },

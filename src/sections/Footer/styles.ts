@@ -10,5 +10,9 @@ export const Container = styled.div`
   div {
     padding: 26px;
     text-align: center;
+
+    a {
+      color: ${theme.colors.secondary};
+    }
   }
 `;
