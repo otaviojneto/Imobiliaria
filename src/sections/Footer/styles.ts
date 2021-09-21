@@ -5,14 +5,23 @@ export const Container = styled.div`
   background-color: ${theme.colors.grey5};
   box-shadow: 0 17px 27px 10px;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
+  padding: 30px;
 
   div {
-    padding: 26px;
     text-align: center;
 
     a {
       color: ${theme.colors.secondary};
     }
+  }
+`;
+
+export const Whats = styled.div`
+  align-items: center;
+  display: flex;
+
+  img {
+    margin-right: 10px;
   }
 `;

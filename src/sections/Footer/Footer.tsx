@@ -1,6 +1,6 @@
 import React from 'react';
 import { IcWhatsapp } from '../../icons';
-import { Container } from './styles';
+import { Container, Whats } from './styles';
 
 const Footer: React.FC = () => {
   return (
@@ -16,10 +16,11 @@ const Footer: React.FC = () => {
       <div>
         <a href="https://api.whatsapp.com/send?phone=13988045152&text=Olá%20Estou%20interessado%20em%20um%20imóvel">
           <h4>CONTATO</h4>
-          <p>
-            <img src={IcWhatsapp} alt="Whatsapp" />{' '}
-            (13)98804-5152
-          </p>
+          <Whats>
+            <img src={IcWhatsapp} alt="Whatsapp" />
+
+            <p>(13)98804-5152</p>
+          </Whats>
         </a>
       </div>
     </Container>

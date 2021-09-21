@@ -35,14 +35,22 @@ export const Content = styled.div`
     bottom: -36px;
     content: '';
     height: 70px;
-    left: 3px;
+    left: 0px;
     transform: rotate(-3deg);
+    transition: ease-in-out 0.4s;
     position: absolute;
-    width: 100%;
+    width: 101%;
+    overflow: hidden;
   }
 
   img {
     height: 350px;
     z-index: 1;
+  }
+
+  @media (min-width: 1400px) {
+    &::after {
+      transform: rotate(-2deg);
+    }
   }
 `;

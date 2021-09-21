@@ -16,4 +16,9 @@ export const Cards = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 40px 0;
+
+  @media (max-width: 874px) {
+    justify-content: center;
+    gap: 40px 40px;
+  }
 `;

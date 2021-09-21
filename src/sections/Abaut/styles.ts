@@ -7,6 +7,7 @@ export const Container = styled.div`
   padding: 70px 10%;
   position: relative;
   text-align: center;
+  overflow: hidden;
 
   &::before {
     background-color: ${theme.colors.bgColor};
@@ -16,7 +17,7 @@ export const Container = styled.div`
     top: -32px;
     transform: rotate(2deg);
     position: absolute;
-    width: 100%;
+    width: 101%;
   }
 
   h1 {
