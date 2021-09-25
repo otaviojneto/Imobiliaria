@@ -4,10 +4,15 @@ import { Base, Card, Footer, Image, Info } from './styles';
 
 export type CardInfoProps = {
   Img?: string;
+  type?: string;
   onClick?: () => void;
 };
 
-const CardInfo: React.FC<CardInfoProps> = ({ Img, onClick }) => {
+const CardInfo: React.FC<CardInfoProps> = ({
+  Img,
+  onClick,
+  type,
+}) => {
   return (
     <Card>
       <button type="button" onClick={onClick}>
@@ -15,7 +20,7 @@ const CardInfo: React.FC<CardInfoProps> = ({ Img, onClick }) => {
 
         <Base>
           <Info>
-            <p>Apartamento</p>
+            <p>{type}</p>
             <h3>Endereço</h3>
             <p>Bairro,cidade</p>
             <h4>valor:</h4>

@@ -34,7 +34,7 @@ export const Content = styled.div`
     background-color: ${theme.colors.bgColor};
     bottom: -36px;
     content: '';
-    height: 70px;
+    height: 86px;
     left: 0px;
     transform: rotate(-3deg);
     transition: ease-in-out 0.4s;
