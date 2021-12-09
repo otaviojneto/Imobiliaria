@@ -4,7 +4,7 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
-import Home from '../pages/Home';
+import Home from '../pages/index';
 
 const Routes: React.FC = () => (
   <Router>

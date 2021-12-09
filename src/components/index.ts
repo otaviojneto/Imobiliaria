@@ -1,4 +1,3 @@
-import CardInfo from './CardInfo';
-import Hamburguer from './Hamburguer';
-
-export { CardInfo, Hamburguer };
+export { default as CardInfo } from './CardInfo';
+export { default as Hamburguer } from './Hamburguer';
+export { default as Modal } from './Modal';

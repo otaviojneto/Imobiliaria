@@ -1,42 +1,21 @@
-import React, { useCallback, useState } from 'react';
-import { CardInfo } from '../../components';
+import React, { useState } from 'react';
 import { background } from '../../assets';
-
+import { CardInfo, Modal } from '../../components';
 import { Cards, Container } from './styles';
-import { infosImobiliaria } from '../../services/api';
 
 const Rent: React.FC = () => {
-  const [house, setHouse] = useState();
-
-  const getHouse = async () => {
-    try {
-      const { data } = await infosImobiliaria.get();
-    } catch (error) {
-      console.log('error');
-    }
-
-    setHouse();
-  };
-
-  // async function getContent() {
-  //   try {
-  //     const api = await fetch(
-  //       'https://admin-edbe9-default-rtdb.firebaseio.com/',
-  //     );
-  //   } catch (error) {
-  //     console.error(error);
-  //   }
-  // }
-
-  // console.log(getContent());
-
+  const [openModal, setOpenModal] = useState(false);
   return (
     <Container>
       <h1>Imóveis adicionados recentemente</h1>
 
       <Cards>
-        <CardInfo type={house} Img={background} />
+        <CardInfo
+          Img={background}
+          onClick={() => console.log(setOpenModal(true))}
+        />
       </Cards>
+      {openModal && <Modal />}
     </Container>
   );
 };

@@ -6,19 +6,18 @@ import {
   Hero,
   Nav,
   Rent,
-} from '../../sections';
-import { Container } from './styles';
+} from '../sections';
 
 const Home: React.FC = () => {
   return (
-    <Container>
+    <>
       <Nav />
       <Hero />
       <Rent />
       <Advertise />
       <Abaut />
       <Footer />
-    </Container>
+    </>
   );
 };
 
