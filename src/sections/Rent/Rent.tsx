@@ -12,10 +12,13 @@ const Rent: React.FC = () => {
       <Cards>
         <CardInfo
           Img={background}
-          onClick={() => console.log(setOpenModal(true))}
+          onClick={() => setOpenModal(true)}
         />
       </Cards>
-      {openModal && <Modal />}
+
+      {openModal && (
+        <Modal closeModal={() => setOpenModal(false)} />
+      )}
     </Container>
   );
 };

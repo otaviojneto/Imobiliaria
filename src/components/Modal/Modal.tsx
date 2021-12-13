@@ -1,9 +1,35 @@
 import React from 'react';
-import { Container } from './styles';
+import {
+  Close,
+  Container,
+  Header,
+  Infos,
+  ModalContainer,
+} from './styles';
 
-const Modal: React.FC = () => {
+export type ModalProps = {
+  closeModal?: () => void;
+};
+
+const Modal: React.FC<ModalProps> = ({ closeModal }) => {
   return (
-    <Container>Testeddddddddddddddddddddddddddddd</Container>
+    <ModalContainer>
+      <Container>
+        <Header>
+          <h1>Titulo</h1>
+
+          <Close onClick={closeModal} />
+        </Header>
+
+        <Infos>
+          <p>descrição</p>
+          <p>quartos</p>
+          <p>garagem</p>
+          <p>localização</p>
+          <p>Preço</p>
+        </Infos>
+      </Container>
+    </ModalContainer>
   );
 };
 
