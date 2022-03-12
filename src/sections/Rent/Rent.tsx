@@ -15,7 +15,6 @@ const Rent: React.FC = () => {
           onClick={() => setOpenModal(true)}
         />
       </Cards>
-
       {openModal && (
         <Modal closeModal={() => setOpenModal(false)} />
       )}

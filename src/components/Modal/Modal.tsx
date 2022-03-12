@@ -1,4 +1,5 @@
 import React from 'react';
+import SwiperReact from '../SwiperReact/SwiperReact';
 import {
   Close,
   Container,
@@ -20,7 +21,7 @@ const Modal: React.FC<ModalProps> = ({ closeModal }) => {
 
           <Close onClick={closeModal} />
         </Header>
-
+        <SwiperReact />
         <Infos>
           <p>descrição</p>
           <p>quartos</p>
