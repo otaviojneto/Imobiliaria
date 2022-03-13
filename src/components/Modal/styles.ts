@@ -54,19 +54,19 @@ export const Content = styled.div`
 `;
 
 export const Rooms = styled.div`
-  padding: 30px;
-  width: 50%;
+  padding: 20px;
+  width: 51%;
 `;
 
 export const Image = styled.img`
-  height: 230px;
+  height: 420px;
   object-fit: cover;
-  width: 100%;
+  max-width: 100%;
 `;
 
 export const Infos = styled.div`
-  padding: 30px;
-  width: 50%;
+  padding: 20px;
+  width: 49%;
 
   img {
     width: 100%;
