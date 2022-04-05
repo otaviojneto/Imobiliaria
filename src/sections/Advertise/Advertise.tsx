@@ -10,7 +10,10 @@ const Advertise: React.FC = () => {
     <Container>
       <h2>Anuncie conosco </h2>
 
-      <Form>
+      <Form
+        action="https://formsubmit.co/otaviojnetoo@gmail.com"
+        method="POST"
+      >
         <InputText labelName="Nome" value={name} />
         <InputText labelName="Email" value={email} />
         <InputText
@@ -18,6 +21,7 @@ const Advertise: React.FC = () => {
           labelName="Celular"
           value={phone}
         />
+        <button type="submit">botão </button>
       </Form>
     </Container>
   );
