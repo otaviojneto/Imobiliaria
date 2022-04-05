@@ -35,13 +35,13 @@ export const Input = styled.input`
       top: 0;
       display: block;
       transition: 0.2s;
-      font-size: 16px;
+      font-size: 12px;
       font-weight: 700;
     }
     padding-bottom: 6px;
     font-weight: 700;
     border-width: 3px;
-    border-image: linear-gradient(to right, #ff0043, #ea38a3);
+    border-image: linear-gradient(to right, #4d92ed, #868686);
     border-image-slice: 1;
   }
 
