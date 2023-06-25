@@ -14,8 +14,8 @@ const SwiperReact: React.FC = ({ children }) => {
         modules={[Navigation, Pagination]}
         navigation
         pagination
-        onSlideChange={() => console.log('slide change')}
-        onSwiper={swiper => console.log(swiper)}
+        // onSlideChange={() => console.log('slide change')}
+        // onSwiper={swiper => console.log(swiper)}
       >
         {children}
       </Swiper>

@@ -12,7 +12,7 @@ export const Container = styled.div`
   box-shadow: 0 -11px 21px 0;
   display: flex;
   justify-content: space-between;
-  padding: 15px 15%;
+  padding: 15px 10%;
   position: relative;
 `;
 

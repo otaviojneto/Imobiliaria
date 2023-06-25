@@ -14,12 +14,21 @@ const Advertise: React.FC = () => {
         action="https://formsubmit.co/otaviojnetoo@gmail.com"
         method="POST"
       >
-        <InputText labelName="Nome" value={name} />
-        <InputText labelName="Email" value={email} />
+        <InputText
+          labelName="Nome"
+          value={name}
+          onChange={() => setName}
+        />
+        <InputText
+          labelName="Email"
+          value={email}
+          onChange={() => setEmail}
+        />
         <InputText
           type="tel"
           labelName="Celular"
           value={phone}
+          onChange={() => setPhone}
         />
         <button type="submit">botão </button>
       </Form>

@@ -1,10 +1,10 @@
-import React, { InputHTMLAttributes } from 'react';
+import React from 'react';
 import { Input, Label, Struture } from './styles';
 
 interface InputTextProps {
   labelName: string;
   type?: string;
-  value: any;
+  value?: string | number;
   onChange?: () => void;
 }
 
